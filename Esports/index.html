@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overwatch Comparison Guide</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+
+<div class="container-fluid picture">
+    <div class="row">
+        <img class='logoText' src="images/overwatchText.png" alt="text">
+        <img class='characters' src="images/characters.jpg" alt="characters">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Hero Abilities Video</button>
+        <!-- <button type="button" class="btn btn-info btn-lg charBtn" id='gamePageBtn'>Compare Characters Below</button> -->
+    </div>
+</div>
+
+    <!-- Trigger the modal with a button -->
+    
+    <!-- Modal -->
+    <div class="container-fluid">
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <iframe width="1200" height="800" src="https://www.youtube.com/embed/3lomug7cchQ?autoplay=1"
+                      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+
+<div class="container-fluid bg2">
+  <div class="row">
+    <div class="col-sm-6 textStyle">
+      <h1 class='h1Text'>COMPARE YOUR FAVORITE HEROES !</h1>
+      <p class='pText'>Below you will choose 2 characters to display their different abilities side by side. <br>
+        You will be able to make a comparison between multiple heroes to help<br>
+        decide which character will be best for your playstyle!</p>
+    </div>
+    <dic class="col-sm-6">
+      <img class='reaper' src="./images/Reaper_portrait.png" alt="reaperPic">
+    </dic>
+  </div>
+</div>
+    
+
+    
+<div class="container-fluid bg">
+    <div class="row marginTop">
+        <!-- default player 1 ----------------------------------------------------- -->
+        <div class="col-sm-4" id='p1'></div>
+        <!-- ---------------------------------------------------------------------- -->
+        <div class="col-sm-4">
+        <!-- Compare and Reset Button ----------------------------------------------------- -->
+            <img class='logoText2' src="./images/overwatchText2-cropped.png" alt="text2">
+            <button type="button" class="btn btn-info btn-lg compHeroBtn" id='compare'>Compare Heroes</button>
+            <button type="button" class="btn btn-info btn-lg resetBtn" id='resetTopBtn'>Reset Heroes</button>
+        <!-- ------------------------------------------------------------------------------ -->
+        </div>
+        <!-- default player 2 ----------------------------------------------------- -->
+            <div class="col-sm-4" id='p2'></div>
+        <!-- ---------------------------------------------------------------------- -->  
+    </div>
+    <div class="container-fluid charBottom">
+        <div class="row">
+            <div class="col-sm-8 selectCharacters" id='charSelect'></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg3 " id='compareDiv'>
+    <div class="row">
+        <div class="col-sm-12">
+          <img src="./images/overwatchText3-cropped.png" alt="text3" class='text3'>
+        </div>
+    </div>
+    <div class="container chosenChars coolBorder">
+    <div class="row nameContainer ">
+        <div class="col-sm-2 coolBorderRight charBackground" id='player1-icon'></div>
+        <div class="col-sm-4 coolBorderRight" id="player1-name"></div>
+        <div class="col-sm-2 coolBorderRight charBackground" id='player2-icon'></div>
+        <div class="col-sm-4 coolBorderRight" id="player2-name"></div>
+      </div>
+    <div class="row abilityContainer">
+      <div class="col-sm-2 coolBorderRight"><h3 class='ablLable'>Abilities</h3></div>
+      <div class="col-sm-4 coolBorderRight"></div>
+      <div class="col-sm-2 coolBorderRight"><h3 class='ablLable'>Abilities</h3></div>
+      <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row abilityContainer abilities">
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row ultContainer">
+        <div class="col-sm-2 coolBorderRight"><h3 class='ultLable'>Ultimate</h3></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+        <div class="col-sm-2 coolBorderRight"><h3 class='ultLable'>Ultimate</h3></div>
+        <div class="col-sm-4 coolBorderRight"></div>
+    </div>
+    <div class="row ultContainer ultimate">
+        <div class="col-sm-2 coolBorderRight" id='player1-ultIcon'></div>
+        <div class="col-sm-4 coolBorderRight" id='player1-ultName'></div>
+        <div class="col-sm-2 coolBorderRight" id='player2-ultIcon'></div>
+        <div class="col-sm-4 coolBorderRight" id='player2-ultName'></div>
+      </div>
+
+    <div class="row">
+      <div class="col-sm-12 align-center">
+          <button type="button" class="btn btn-info btn-lg resetBtn" id='resetBottomBtn'>Select New Heroes</button>
+      </div>
+    </div>
+  </div> 
+</div>    
+
+
+
+
+
+
+<script src='app.js'></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
